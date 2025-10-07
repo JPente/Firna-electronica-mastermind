@@ -1,0 +1,119 @@
+/* sintaxis de cometarios en CSS: */
+/* clases enumeradas en index.html */
+/* .container */
+/* firma-img */
+/* nombre */
+/* descripcion */
+/* profesion */
+/* email */
+/* redes */
+/*     linkedin */
+/*     twitter */
+
+/* estilos generales */
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(180deg, #f7f9fb 0%, #eef3f8 100%);
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+/* Card container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0 8px 28px rgba(16, 24, 40, 0.1);
+    text-align: center;
+}
+
+/* Signature image */
+.firma-img {
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: contain;
+
+    
+}
+
+/* Name */
+.nombre {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #0f172a; /* slate-900 */
+    margin: 4px 0 6px;
+}
+
+/* Short description */
+.descripcion {
+    font-size: 0.98rem;
+    color: #475569; /* slate-600 */
+    margin: 0 0 4px;
+}
+
+/* Profession */
+.profesion {
+    font-size: 0.95rem;
+    color: #334155; /* slate-700 */
+    margin: 0 0 14px;
+}
+
+/* Email link */
+.email {
+    display: inline-block;
+    color: #2563eb; /* blue-600 */
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.email:hover {
+    text-decoration: underline;
+}
+
+/* Social links wrapper */
+.redes {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.redes a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.linkedin {
+    background-color: #0a66c2;
+    color: #fff;
+}
+.linkedin:hover { background-color: #095aa9; transform: translateY(-1px); }
+
+.twitter {
+    background-color: #0f1419;
+    color: #fff;
+}
+.twitter:hover { background-color: #1f2937; transform: translateY(-1px); }
+
+/* Small viewport tweaks */
+@media (max-width: 420px) {
+    .container { padding: 22px; border-radius: 14px; }
+    .firma-img { width: 120px; }
+    .nombre { font-size: 1.5rem; }
+}
+
+
